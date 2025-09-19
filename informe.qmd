@@ -1,0 +1,45 @@
+---
+title: ""
+format: 
+  html:
+    toc: true                
+    toc-title: "Índice"  
+    toc-depth: 3             
+    toc-location: left 
+    include-in-header: encabezado_informe.html
+    css: estilo_css.css
+editor: visual
+execute:
+  warning: false
+  message: false
+---
+
+# **Reporte epidemiológico unidad centinela Hospital Dr. Pedro Notti**
+
+## **Introducción**
+
+Las infecciones respiratorias agudas (IRAG)....
+
+## **Objetivos**
+
+### **Objetivo general**
+
+### **Objetivos específicos**
+
+```{r}
+#| echo: false
+
+source("virusrespiratorios.R")
+source("tiempo_analisis.R")
+```
+
+Grafico 1: Casos de IRAG e IRAGe por semana epidemiológica. Hospital Dr.Notti SE `r semana_min_anio_minimo`-`r anio_minimo` a SE`r semana_max_anio_maximo`-`r anio_maximo`.
+
+```{r}
+#| echo: false
+
+grafico_interactivo_virus
+
+```
+
+Fuente: elaboración propia a partir de datos del SNVS 2.0.
